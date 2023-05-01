@@ -18,7 +18,7 @@ export default function (options: BuildOptions): Configuration {
         module: {
             rules: build.loaders(options),
         },
-        resolve: build.resolvers(),
+        resolve: build.resolvers(options),
         devServer: isDev ? build.devServer(options) : undefined,
         devtool: isDev ? 'inline-source-map' : undefined,
     };
