@@ -1,0 +1,14 @@
+name: Branch Name
+
+on: pull_request
+
+jobs:
+  lint-branch-name:
+    name: branch name
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: lekterable/branchlint-action@v1.1.0
+        with:
+          allowed: |
+            /^[a-z0-9]+(?:_[a-z0-9]+)*$/i
