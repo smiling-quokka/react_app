@@ -1,7 +1,27 @@
 .Sidebar {
-    height: calc(100vh - var(--navbar-height));
-    width: 300px;
-    background: var(--inverted-bg-color);
+  height: calc(100vh - var(--navbar-height));
+  width: 300px;
+  background: var(--inverted-bg-color);
+  position: relative;
+  z-index: 100;
+  transition: width .2s ease;
+}
 
-    position: relative;
+.collapsed {
+  width: 50px;
+}
+
+.open-icon {
+  fill: $color--gray;
+}
+
+.switcher {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  & > svg {
+    fill: $color--gray;
+  }
 }

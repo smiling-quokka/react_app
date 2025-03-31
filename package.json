@@ -14,7 +14,7 @@
     "url": "https://github.com/smiling-quokka/react_app.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mykola Yarovenko",
   "license": "ISC",
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
