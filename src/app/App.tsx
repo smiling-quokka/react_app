@@ -11,8 +11,10 @@ export const App = () => {
 
     return (
         <div className={classNames('app', {}, [theme, 'cls2', 'cls3'])}>
-            <Navbar />
-            <Sidebar />
+            <div className="flex flex--column relative">
+              <Navbar />
+              <Sidebar />
+            </div>
             <Router />
         </div>
     );
